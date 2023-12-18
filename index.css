@@ -1,0 +1,27 @@
+html {
+    /* The variable is created with two dashes and a variable name and then the value and end the css rule with a semi-colon */
+    --main_color: #04aa6d;
+    --background_color: #c8c8c8;
+    --border_styling: 2px solid #9763f6;
+
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background_color);
+
+}
+
+h1 {
+    border-bottom: var(--border_styling);
+}
+
+p {
+    /* To access the variable you just substitute your value with the CSS variable inside parentheses and the `var` keyword */
+    color: var(--main_color);
+    border-bottom: var(--border_styling);
+}
